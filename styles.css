@@ -1,0 +1,511 @@
+/* Red Junk Removal - Coming Soon Page Styles */
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Archivo', system-ui, sans-serif;
+  color: #15120E;
+  background: #F7F1E3;
+}
+
+a {
+  color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Focus Styles - Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #CC2018;
+  outline-offset: 3px;
+}
+
+/* Typography */
+.num {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: #CC2018;
+}
+
+.heading-xl {
+  margin: 26px 0 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: clamp(44px, 7.4vw, 104px);
+  line-height: 0.92;
+  text-transform: uppercase;
+  max-width: 1000px;
+}
+
+.heading-lg {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.6vw, 62px);
+  line-height: 0.98;
+  text-transform: uppercase;
+  max-width: 860px;
+}
+
+.heading-md {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 44px);
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.heading-sm {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-size: clamp(28px, 3.6vw, 48px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.heading-card {
+  margin-top: 10px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.heading-section {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(24px, 2.8vw, 32px);
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+/* Header */
+.header {
+  background: #15120E;
+  color: #F7F1E3;
+  padding: 14px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  background: #CC2018;
+  color: #F7F1E3;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 24px;
+  padding: 7px 10px;
+  line-height: 1;
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #C9C2B4;
+}
+
+/* Hero Section */
+.hero {
+  background: #CC2018;
+  color: #F7F1E3;
+  padding: 72px 32px 110px;
+}
+
+.hero-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #F7F1E3;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.badge-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #F7F1E3;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  margin: 26px 0 0;
+  font-size: clamp(19px, 2.2vw, 24px);
+  line-height: 1.45;
+  max-width: 720px;
+  font-weight: 500;
+}
+
+/* Signup Card */
+.signup-wrapper {
+  padding: 0 32px;
+}
+
+.signup-card {
+  max-width: 1120px;
+  margin: -70px auto 0;
+  background: #FFFCF4;
+  border: 3px solid #15120E;
+  box-shadow: 14px 14px 0 #15120E;
+  padding: clamp(24px, 3vw, 38px);
+}
+
+.signup-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.signup-info {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.signup-form {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.text-body {
+  margin: 12px 0 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: #3B3E43;
+}
+
+.form-label {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.form-label-secondary {
+  font-weight: 500;
+  color: #5A5349;
+}
+
+.form-input {
+  margin-top: 8px;
+  width: 100%;
+  border: 2px solid #15120E;
+  padding: 16px;
+  font-size: 18px;
+  font-family: 'Archivo', sans-serif;
+  min-height: 52px;
+  background: #F7F1E3;
+  color: #15120E;
+}
+
+.form-label-spacing {
+  margin-top: 16px;
+}
+
+.btn-primary {
+  margin-top: 18px;
+  width: 100%;
+  background: #CC2018;
+  color: #F7F1E3;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  padding: 17px;
+  min-height: 54px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #B01C15;
+}
+
+.form-note {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5A5349;
+}
+
+/* Content Sections */
+.section {
+  padding: 76px 32px 0;
+}
+
+.section-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  margin: 18px 0 0;
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 740px;
+  color: #3B3E43;
+}
+
+/* Features Grid */
+.features-grid {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  flex: 1 1 300px;
+  min-width: 0;
+  background: #FFFCF4;
+  border: 2px solid #15120E;
+  padding: 28px;
+}
+
+.feature-text {
+  margin: 12px 0 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #3B3E43;
+}
+
+/* Dark Card */
+.dark-card {
+  background: #15120E;
+  color: #F7F1E3;
+  padding: clamp(28px, 3.4vw, 48px);
+}
+
+.dark-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  align-items: center;
+}
+
+.dark-card-text {
+  flex: 1 1 360px;
+  min-width: 0;
+}
+
+.dark-card-subtitle {
+  margin: 18px 0 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #E4DED0;
+}
+
+.dark-card-visual {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.vehicle-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Zone Cards */
+.zone-grid {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.zone-card {
+  flex: 1 1 230px;
+  min-width: 0;
+  background: #FFFCF4;
+  border: 2px solid #15120E;
+  padding: 20px;
+}
+
+.zone-label {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #CC2018;
+}
+
+.zone-text {
+  margin-top: 6px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.zone-note {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #5A5349;
+}
+
+/* CTA Section */
+.cta-card {
+  background: #CC2018;
+  color: #F7F1E3;
+  padding: clamp(28px, 3.4vw, 48px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-text {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.cta-subtitle {
+  margin: 14px 0 0;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.cta-buttons {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-secondary {
+  background: #F7F1E3;
+  color: #CC2018;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 17px 28px;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-outline {
+  border: 2px solid #F7F1E3;
+  color: #F7F1E3;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 17px 28px;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  padding: 56px 32px 48px;
+}
+
+.footer-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  border-top: 2px solid #15120E;
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #3B3E43;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  background: #CC2018;
+  color: #F7F1E3;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 16px;
+  padding: 5px 7px;
+  line-height: 1;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 14px 20px;
+  }
+
+  .hero {
+    padding: 48px 20px 80px;
+  }
+
+  .signup-wrapper {
+    padding: 0 20px;
+  }
+
+  .signup-card {
+    box-shadow: 10px 10px 0 #15120E;
+  }
+
+  .section {
+    padding: 56px 20px 0;
+  }
+
+  .footer {
+    padding: 48px 20px 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .hero {
+    padding: 40px 16px 70px;
+  }
+
+  .signup-wrapper {
+    padding: 0 16px;
+  }
+
+  .signup-card {
+    box-shadow: 8px 8px 0 #15120E;
+  }
+
+  .section {
+    padding: 48px 16px 0;
+  }
+
+  .footer {
+    padding: 40px 16px 32px;
+  }
+}
